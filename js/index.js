@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", function() {
         likeButton.textContent = book.users.some((user) => user.id === loggedInUser.id) ? "Unlike" : "Like"
         likeButton.addEventListener('click', () => toggleLike(book, userList, likeButton))
         
-        detailsPanel.append(thumbnail, title, subtitle, author, description, userList, likeButton)
     }
 
     function toggleLike(book, userList, likeButton) {
